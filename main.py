@@ -8,5 +8,6 @@ def demo():
     demo_manager = MergeManager(configs_for_demo=configs)
     demo_manager.show_demo()
 
+
 if __name__ == '__main__':
     demo()

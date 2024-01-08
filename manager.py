@@ -180,7 +180,7 @@ class TestManager(BaseManager):
     def __init__(self, db_config):
         super().__init__(db_config)
 
-    def add_column(self, table_name: str='bands', column_signature: str = 'country VARCHAR(32)'):
+    def add_column(self, table_name: str = 'bands', column_signature: str = 'country VARCHAR(32)'):
         """ Добавление столбца """
         self._add_column(table_name=table_name, column_signature=column_signature)
 
@@ -369,4 +369,3 @@ class MergeManager:
         self.db_prod.disconnect()
         self.db_test = None
         self.db_prod = None
-

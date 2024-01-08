@@ -180,7 +180,7 @@ class TestManager(BaseManager):
     def __init__(self, db_config):
         super().__init__(db_config)
 
-    def add_column(self, table_name: str='bands', column_signature: str = 'country VARCHAR(32)'):
+    def add_column(self, table_name: str = 'bands', column_signature: str = 'country VARCHAR(32)'):
         """ Добавление столбца """
         self._add_column(table_name=table_name, column_signature=column_signature)
 
@@ -210,6 +210,9 @@ class TestManager(BaseManager):
         self.drop_column()
         self.add_table()
         self.remove_table()
+        print('\nВ тестовую БД внесены изменения:',
+              '\n- добавление, удаление, изменение типа столбцов;',
+              '\n- добавление и удаление таблиц')
 
 
 class ProdManager(BaseManager):
@@ -369,4 +372,3 @@ class MergeManager:
         self.db_prod.disconnect()
         self.db_test = None
         self.db_prod = None
-

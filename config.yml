@@ -1,0 +1,15 @@
+database_test:
+  host: bacj9m2tfvt2e18ya12y-mysql.services.clever-cloud.com
+  port: 3306
+  user: ux56xw8azsr6tlhx
+  password: FMMZygzVzEQ48WrYrEKA
+  database: bacj9m2tfvt2e18ya12y
+database_prod:
+  host: bwugiti66amancy1cxma-mysql.services.clever-cloud.com
+  port: 3306
+  user: ui5fppfcwuhomhnz
+  password: UAWWc5VAtzWG22sWzYqq
+  database: bwugiti66amancy1cxma
+
+
+
